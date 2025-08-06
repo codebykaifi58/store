@@ -138,6 +138,17 @@ body {
 #hero-magic-back p{
   font-size: 40px;
 }
+.navbar-nav li a {
+  text-decoration: none; /* removes underline */
+  padding: 8px 15px;      /* top/bottom: 8px, left/right: 15px */
+  color: #000;            /* optional: ensures text is visible */
+  display: inline-block;  /* ensures padding applies properly */
+}
+
+.navbar-nav li a:hover {
+  color: #007bff; /* optional: change color on hover */
+}
+
 
 /* Product 1 */
 #product_1{
@@ -163,9 +174,15 @@ body {
   justify-content: center;
   width: 100%;
 }
-
-#p1_btn button {
+#p1_btn a {
+  text-decoration: none;
+  color: inherit;
   width: 90%;
+  display: block;
+}
+
+#p1_btn button{
+  width:100%;
   height: 40px;
   background-color: transparent;
   border: 1px solid black;
@@ -207,7 +224,12 @@ body {
   justify-content: center;
   width: 100%;
 }
-
+#p2_btn a {
+  text-decoration: none;
+  color: inherit;
+  width: 90%;
+  display: block;
+}
 #p2_btn button {
   width: 90%;
   height: 40px;
@@ -251,7 +273,12 @@ body {
   justify-content: center;
   width: 100%;
 }
-
+#p3_btn a {
+  text-decoration: none;
+  color: inherit;
+  width: 90%;
+  display: block;
+}
 #p3_btn button {
   width: 90%;
   height: 40px;
@@ -590,8 +617,178 @@ text-align: center;
 }
 
 
+/* Mass gainer Page */
+#mass-hero-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mass-hero{
+  width: 70%;
+text-align: center;
+}
+#mass-hero h1{
+  font-size: 30px;
+}
+#mass-gainer-back{
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  height: 100%;
+}
+#mass-img-side{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mass-name-back{
+  text-align: center;
+}
+#mass-star{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mass-star i{
+  color: goldenrod;
+}
+#mass-price{
+  text-align: center;
+}
+#mass-btn-back{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mass-btn-back button{
+  background-color: transparent;
+  border: none;
+}
+
+
+#mass-detail-hero{
+  width: 60%;
+}
+
+
+
+/* pre Page */
+#pre-hero-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#pre-hero{
+  width: 70%;
+text-align: center;
+}
+#pre-hero h1{
+  font-size: 30px;
+}
+#pre-workout-back{
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  height: 100%;
+}
+#pre-img-side{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#pre-name-back{
+  text-align: center;
+}
+#pre-star{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#pre-star i{
+  color: goldenrod;
+}
+#pre-price{
+  text-align: center;
+}
+#pre-btn-back{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#pre-btn-back button{
+  background-color: transparent;
+  border: none;
+}
+
+
+#pre-workout-hero{
+  width: 60%;
+}
+
+
+/* whey protien */
+
+
+.featured-image img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.thumbnail-images {
+  gap: 8px;
+  height: 80px;
+}
+
+.thumb-wrapper {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  opacity: 0.5; /* Default lower opacity for inactive */
+}
+
+.thumb-wrapper.active {
+  opacity: 1; /* Full opacity for active thumbnail */
+}
+
+.thumb-img {
+  width: 50px;   /* Small thumbnail */
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.thumb-wrapper:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+  border-color: #28E98C;
+}
+
+#whey-gallery-back{
+  width: 100%;
+}
+#gallery-back{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height:500px;
+  width: 65%;
+}
+
+
+#halal-img-back img{
+  width: 140px;
+}
+#whey-protien-form-back{
+  width: 40%;
+}
+
+
+
 
 @media (max-width:1400px) {
+  #gallery-back{
+  width: 75%;
+}
 #footer-link-back ul li a{
  font-size: 14px;
 }
@@ -626,7 +823,13 @@ text-align: center;
 
 
 @media (max-width:1200px) {
+#whey-protien-form-back{
+  width: 60%;
+}
 
+#gallery-back{
+  width: 100%;
+}
 /* Product 1 */
 #product_1{
   width: 310px;
@@ -671,7 +874,18 @@ text-align: center;
 
 
 @media (max-width:992px) {
+#whey-protien-form-back{
+  width: 100%;
+}
 
+#whey-protien-row1{
+  display: flex;
+  flex-direction: column;
+}
+#gallery-back{
+  width: 70%;
+  height: 550px;
+}
 #shop-container {
     width: 60%;
     height: 90%;
@@ -748,7 +962,17 @@ text-align: center;
 }
 
 @media (max-width:768px) {
+#gallery-back{
+  width: 100%;
+  height: auto;
+}  
   #protien-hero{
+  width: 100%;
+}
+  #mass-hero{
+  width: 100%;
+}
+  #pre-hero{
   width: 100%;
 }
     .carousel-image {
@@ -756,6 +980,12 @@ text-align: center;
     object-fit: cover;
   }
   #protien-detail-hero{
+  width: 100%;
+}
+  #pre-detail-hero{
+  width: 100%;
+}
+  #mass-detail-hero{
   width: 100%;
 }
   #about-hero-text,

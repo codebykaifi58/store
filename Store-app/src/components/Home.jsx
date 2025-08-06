@@ -8,6 +8,8 @@ import product_3 from '../assets/product_3.png';
 import product_4 from '../assets/product_4.png';
 import product_5 from '../assets/product_5.png';
 
+import { Link } from 'react-router-dom';
+
 function Home(){
  const words = ["Categories", "Categories"];
   const [text, setText] = useState('');
@@ -69,7 +71,9 @@ function Home(){
                                     </div>
                                     <h4>PROTEIN <span>POWDERS</span></h4>
                                     <div id="p1_btn">
-                                        <button >Shop Now </button>
+                                        <Link to="/Protien_powder">
+                                            <button>Shop Now</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +86,9 @@ function Home(){
                                     </div>
                                     <h4>WEIGHT <span>GAINER</span></h4>
                                     <div id="p2_btn">
-                                         <button>  Shop Now </button>
+                                         <Link to="/Weight_Gainer">
+                                            <button>Shop Now</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -95,7 +101,9 @@ function Home(){
                                     </div>
                                     <h4>PRE & <span>INTRA WORKOUT</span></h4>
                                     <div id="p3_btn">
-                                         <button>Shop Now</button>
+                                         <Link to="/Pre_Workout">
+                                            <button>Shop Now</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

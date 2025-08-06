@@ -1,5 +1,6 @@
 import React from "react";
-import whey_pic_1 from '../assets/whey-protien-1.jpg'
+import whey_pic_1 from '../assets/whey-protien-1.jpg';
+import { Link } from 'react-router-dom';
 
 function Protien_powder() {
   return (
@@ -46,9 +47,9 @@ function Protien_powder() {
                                 </p>
                             </div>
                             <div id="whey-btn-back">
-                                <button>
-                                    Shop Now
-                                </button>
+                                 <Link to="/Whey_protien">
+                                    <button>Shop Now</button>
+                                </Link>                              
                             </div>
                         </div>
                     </div>
@@ -81,9 +82,9 @@ function Protien_powder() {
                                 </p>
                             </div>
                             <div id="whey-btn-back">
-                                <button>
-                                    Shop Now
-                                </button>
+                                <Link to="/Whey_protien_phn">
+                                    <button>Shop Now</button>
+                                </Link>  
                             </div>
                         </div>
                     </div>
