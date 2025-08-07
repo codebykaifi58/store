@@ -1,12 +1,12 @@
 import React from "react";
-import pre_pic_1 from '../assets/Pre-Workout-1.jpg';
+import pre_pic_1 from '../assets/1080-by-1080-px-PNG-1-300x300.png';
 import pre_pic_2 from '../assets/Pre-Workout-2.jpg';
 import pre_pic_3 from '../assets/Pre-Workout-3.jpg';
 import pre_pic_4 from '../assets/Pre-Workout-4.jpg';
 import pre_pic_5 from '../assets/Pre-Workout-5.jpg';
 import pre_pic_6 from '../assets/Pre-Workout-6.jpg';
 import pre_pic_7 from '../assets/Pre-Workout-7.jpg';
-
+import { Link } from "react-router-dom";
 function Pre_Workout() {
   return (
     <div className="cotainer-fluid">
@@ -46,15 +46,17 @@ function Pre_Workout() {
                             <div id="pre-price">
                                 <p>
                                     <b>
-                                        Rs 5990.00 - <br />
-                                        Rs 17499.00
+                                        <del style={{color:'gray'}}>
+                                            Rs 5000.00    
+                                        </del> - <br />
+                                        ₨3,499.00
                                     </b>
                                 </p>
                             </div>
                             <div id="pre-btn-back">
-                                <button>
-                                    Shop Now
-                                </button>
+                                 <Link to="/Creatine_monohydrate">
+                                     <button>Shop Now</button>
+                                 </Link>
                             </div>
                         </div>
                     </div>
@@ -82,14 +84,16 @@ function Pre_Workout() {
                             <div id="pre-price">
                                 <p>
                                     <b>
-                                       ₨6,999.00 – <br /> ₨14,999.00
+                                       <del style={{color:'gray'}}>
+                                        ₨2000.00
+                                        </del> – <br />1,299.00
                                     </b>
                                 </p>
                             </div>
                             <div id="pre-btn-back">
-                                <button>
-                                    Shop Now
-                                </button>
+                                <Link to="/Omega3">
+                                     <button>Shop Now</button>
+                                 </Link>
                             </div>
                         </div>
                     </div>
@@ -117,14 +121,16 @@ function Pre_Workout() {
                             <div id="pre-price">
                                 <p>
                                     <b>
-                                        ₨13,149.00 – <br /> ₨24,999.00
+                                        <del style={{color:'gray'}}>
+                                            Rs5000.00    
+                                        </del> – <br /> Rs2,999.00
                                     </b>
                                 </p>
                             </div>
                             <div id="pre-btn-back">
-                                <button>
-                                    Shop Now
-                                </button>
+                               <Link to="/Nitroboost_pre">
+                                     <button>Shop Now</button>
+                                 </Link>
                             </div>
                         </div>
                     </div>
@@ -152,14 +158,16 @@ function Pre_Workout() {
                             <div id="pre-price">
                                 <p>
                                     <b>
-                                        ₨5,649.00 – <br />₨8,749.00   
+                                        <del style={{color:'gray'}}>
+                                            ₨6000.00    
+                                        </del> – <br />Rs3,499.00 
                                     </b>
                                 </p>
                             </div>
                             <div id="pre-btn-back">
-                                <button>
-                                    Shop Now
-                                </button>
+                                <Link to="/Omega">
+                                     <button>Shop Now</button>
+                                 </Link>
                             </div>
                         </div>
                     </div>
@@ -187,14 +195,16 @@ function Pre_Workout() {
                             <div id="pre-price">
                                 <p>
                                     <b>
-                                        ₨5,649.00 – <br />₨8,749.00   
+                                       <del style={{color:'gray'}}>
+                                            ₨6000.00    
+                                        </del> – <br />Rs3,499.00   
                                     </b>
                                 </p>
                             </div>
                             <div id="pre-btn-back">
-                                <button>
-                                    Shop Now
-                                </button>
+                                <Link to="/Multivitamin_Ultra">
+                                     <button>Shop Now</button>
+                                 </Link>
                             </div>
                         </div>
                     </div>
@@ -222,15 +232,17 @@ function Pre_Workout() {
                             <div id="pre-price">
                                 <p>
                                     <b>
-                                      ₨9,549.00 – <br />₨16,749.00
+                                      <del style={{color:'gray'}}>
+                                        Rs6000.00
+                                        </del> – <br />₨3,849.00
  
                                     </b>
                                 </p>
                             </div>
                             <div id="pre-btn-back">
-                                <button>
-                                    Shop Now
-                                </button>
+                                 <Link to="/Vitamin_d3">
+                                     <button>Shop Now</button>
+                                 </Link>
                             </div>
                         </div>
                     </div>
@@ -243,7 +255,7 @@ function Pre_Workout() {
                         <div id="pre-name-back">
                             <p>
                                 <b>
-                                   Creatine Monohydrate by The Protein Works
+                                   Zinc And Magnesium <br /> (Ultimate Testosterone Booster)
                                 </b>
                             </p>
                         </div>
@@ -258,15 +270,17 @@ function Pre_Workout() {
                             <div id="pre-price">
                                 <p>
                                     <b>
-                                      ₨9,549.00 – <br />₨16,749.00
+                                      <del style={{color:'gray'}}>
+                                        Rs3000.00
+                                        </del> – <br />₨2,149.00
  
                                     </b>
                                 </p>
                             </div>
                             <div id="pre-btn-back">
-                                <button>
-                                    Shop Now
-                                </button>
+                                <Link to="/Zinc_And_Magnesium">
+                                     <button>Shop Now</button>
+                                 </Link>
                             </div>
                         </div>
                     </div>

@@ -1,24 +1,25 @@
 import React, { useState } from 'react';
 
-import whey1 from '../assets/Whey-Protein-Front-Pic-600x600.jpg';
-import whey2 from '../assets/Whey-Protein-Back-Pic-600x600.jpg';
+import whey from '../assets/Diet-iso-6-600x600.jpg';
+import whey1 from '../assets/Diet-Iso-1-600x600.jpg';
+import whey2 from '../assets/Diet-Iso-2-600x600.jpg';
+import whey3 from '../assets/Diet-Iso-4-600x600.jpg';
 import halal from '../assets/Halal-Good-Logo-300x160-1-300x160.jpg';
-const Whey_protien_phn = () => {
+
+const Whey_protien_isolate = () => {
   // Replace with your actual image URLs
   const images = [
     whey1,
     whey2,
+    whey3,
+    whey
   ];
 
   const [featuredImage, setFeaturedImage] = useState(images[0]); // default image
 
 const variants = [
-  { id: 1, flavor: 'Chocolate', weight: '1 kg(2.2 lbs)-33 Serving', price: 7999.00 },
-  { id: 2, flavor: 'Chocolate', weight: '2 kg(4.4 lbs) (2-pack of 1 kg)-66 Serving', price: 14999.00 },
-  { id: 3, flavor: 'Unflavoured', weight: '1 kg(2.2 lbs)-33 Serving', price: 6999.00 },
-  { id: 4, flavor: 'Unflavoured', weight: '2 kg(4.4 lbs) (2-pack of 1 kg)-66 Serving', price: 12999.00 },
-  { id: 5, flavor: 'Mango', weight: '1 kg(2.2 lbs)-33 Serving', price: 7999.00 },
-  { id: 6, flavor: 'Mango', weight: '2 kg(4.4 lbs) (2-pack of 1 kg)-66 Serving', price: 14999.00 },
+  { id: 1, flavor: 'Chocolate Silk', weight: '1 kg(2.2 lbs)-40 Serving', price: 13149.00 },
+  { id: 2, flavor: 'Chocolate Silk', weight: '2 kg(4.4 lbs)-80 Serbing', price: 24999.00 },
 ];
 
 const [selectedFlavor, setSelectedFlavor] = useState(variants[0].flavor);
@@ -38,7 +39,9 @@ const handleDecrement = () => {
   setQuantity(prev => (prev > 1 ? prev - 1 : 1));
 };
 
-const productName = "Whey Protein by PHN";
+
+
+const productName = "Whey Protein Isolate 90 – The Protein Works™ (UK)";
   const addToCart = () => {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -83,20 +86,20 @@ const productName = "Whey Protein by PHN";
                                     <div className="col-lg-6 mx-auto" id='gallery-back'>
                                         {/* Featured Image */}
                                         <div className="featured-image mb-3">
-                                        <img src={featuredImage} alt="Featured" className="img-fluid" />
+                                            <img src={featuredImage} alt="Featured" className="img-fluid" />
                                         </div>
 
                                         {/* Thumbnails */}
                                         <div className="thumbnail-images d-flex justify-content-center">
-                                        {images.map((img, index) => (
+                                            {images.map((img, index) => (
                                             <div
-                                            key={index}
-                                            className={`thumb-wrapper ${img === featuredImage ? 'active' : ''}`}
-                                            onClick={() => setFeaturedImage(img)}
+                                                key={index}
+                                                className={`thumb-wrapper ${img === featuredImage ? 'active' : ''}`}
+                                                onClick={() => setFeaturedImage(img)}
                                             >
-                                            <img src={img} alt={`Thumbnail ${index}`} className="thumb-img" />
+                                                <img src={img} alt={`Thumbnail ${index}`} className="thumb-img" />
                                             </div>
-                                        ))}
+                                            ))}
                                         </div>
                                     </div>
                                 </div>
@@ -105,7 +108,7 @@ const productName = "Whey Protein by PHN";
                         <div className="col mt-4" id='whey-protien-detail-back'>
                             <div id="whey-heading-back">
                                 <h3>
-                                    Whey Protein by PHN
+                                   Whey Protein Isolate 90 – The Protein Works™ (UK)
                                 </h3>
                             </div>
                             <div id="whey-details-few" className='mt-5'>
@@ -116,23 +119,18 @@ const productName = "Whey Protein by PHN";
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                 </span>
-                                <p style={{fontWeight:'500'}}>
-                                    Note: The Protein Factory is pleased to announce that we have become authorized sellers of Pure
-                                     Health Nutrition. Pure Health Nutrition is Pakistan’s first high quality sports nutrition brand.
-                                      PHN’s aim is to provide its customers with the best quality supplements at the best prices. 
-                                      All the ingredients are imported from the best suppliers around the world. Only the  packaging 
-                                      is done in Pakistan. 
-                                </p>
                             </div>
                             <div id="whey-advantages-back">
                                 <ul>
-                                    <li>Highest Quality Whey Protein Imported From Europe.</li>
-                                    <li>100% Original Guaranteed.</li>
-                                    <li>22 g Protein Per Scoop.</li>
-                                    <li>5 g BCAAs and 3.7 g Glutamine Per Scoop.</li>
-                                    <li>Extremely low in Fats & Carbs.</li>
+                                    <li>Brand Name: The Protein Works™ (UK)</li>
+                                    <li>100% Original. Directly Imported from UK</li>
+                                    <li>Extremely high in BCAAs and Glutamine</li>
+                                    <li>Approximately 6 g BCAAs and 3.9 g Glutamine per serving</li>
                                     <li>Ultra Pure, Premium Grade Whey Protein</li>
-                                    <li>Unflavoured Whey Protein Imported from Europe. Blended and packaged in Pakistan</li>
+                                    <li>80 Servings in 2 kg (4.4 lbs)</li>
+                                    <li>Includes Aminogen Enzyme System</li>
+                                    <li>66 Servings in 2 kg (4.4 lbs)</li>
+                                    <li>22 g Protein in 25 g serving (27 g Protein In 31 g serving)</li>
                                 </ul>
                             </div>
                         </div>
@@ -150,16 +148,15 @@ const productName = "Whey Protein by PHN";
                                         <div className="mb-3">
                                             <label className="form-label">Flavor</label>
                                             <select
-                                                className="form-select"
-                                                value={selectedFlavor}
-                                                onChange={(e) => setSelectedFlavor(e.target.value)}
+                                            className="form-select"
+                                            value={selectedFlavor}
+                                            onChange={(e) => setSelectedFlavor(e.target.value)}
                                             >
-                                                {['Chocolate', 'Unflavoured', 'Mango'].map(flavor => (
-                                                    <option key={flavor} value={flavor}>{flavor}</option>
-                                                ))}
+                                            {[...new Set(variants.map(v => v.flavor))].map(flavor => (
+                                                <option key={flavor} value={flavor}>{flavor}</option>
+                                            ))}
                                             </select>
                                         </div>
-
 
                                         {/* Weight Dropdown */}
                                         <div className="mb-3">
@@ -221,4 +218,4 @@ const productName = "Whey Protein by PHN";
   );
 };
 
-export default Whey_protien_phn;
+export default Whey_protien_isolate;

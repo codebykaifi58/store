@@ -1,5 +1,12 @@
 import React from "react";
 import whey_pic_1 from '../assets/whey-protien-1.jpg';
+import Whey_pic_2 from '../assets/Whey-Protein-Front-Pic-600x600.jpg';
+import Whey_pic_3 from '../assets/Diet-Iso-1-600x600.jpg';
+import Whey_pic_4 from '../assets/Pea-front-600x600.jpg';
+import Whey_pic_5 from '../assets/DMR-1-600x600.jpg';
+import Whey_pic_6 from '../assets/Micellar-Casein-600x600.jpg';
+import Whey_pic_7 from '../assets/all_recovery.png';
+import Whey_pic_8 from '../assets/1-600x600.png';
 import { Link } from 'react-router-dom';
 
 function Protien_powder() {
@@ -57,7 +64,7 @@ function Protien_powder() {
                  <div className="col-12 col-sm-6 col-lg-3 mb-4">
                     <div id="whey-protien-back">
                         <div id="whey-img-side">
-                            <img src={whey_pic_1} alt="img" width={'200px'}/>
+                            <img src={Whey_pic_2} alt="img" width={'200px'}/>
                         </div>
                         <div id="whey-name-back">
                             <p>
@@ -84,7 +91,7 @@ function Protien_powder() {
                             <div id="whey-btn-back">
                                 <Link to="/Whey_protien_phn">
                                     <button>Shop Now</button>
-                                </Link>  
+                                </Link>    
                             </div>
                         </div>
                     </div>
@@ -92,7 +99,7 @@ function Protien_powder() {
                 <div className="col-12 col-sm-6 col-lg-3 mb-4">
                     <div id="whey-protien-back">
                         <div id="whey-img-side">
-                            <img src={whey_pic_1} alt="img" width={'200px'}/>
+                            <img src={Whey_pic_3} alt="img" width={'200px'}/>
                         </div>
                         <div id="whey-name-back">
                             <p>
@@ -117,9 +124,9 @@ function Protien_powder() {
                                 </p>
                             </div>
                             <div id="whey-btn-back">
-                                <button>
-                                    Shop Now
-                                </button>
+                               <Link to="/Whey_protien_isolate">
+                                    <button>Shop Now</button>
+                                </Link>   
                             </div>
                         </div>
                     </div>
@@ -127,7 +134,7 @@ function Protien_powder() {
                  <div className="col-12 col-sm-6 col-lg-3 mb-4">
                     <div id="whey-protien-back">
                         <div id="whey-img-side">
-                            <img src={whey_pic_1} alt="img" width={'200px'}/>
+                            <img src={Whey_pic_2} alt="img" width={'200px'}/>
                         </div>
                         <div id="whey-name-back">
                             <p>
@@ -152,9 +159,9 @@ function Protien_powder() {
                                 </p>
                             </div>
                             <div id="whey-btn-back">
-                                <button>
-                                    Shop Now
-                                </button>
+                                <Link to="/Pea_protien_isolate">
+                                    <button>Shop Now</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -162,7 +169,7 @@ function Protien_powder() {
                  <div className="col-12 col-sm-6 col-lg-3 mb-4 ">
                     <div id="whey-protien-back">
                         <div id="whey-img-side">
-                            <img src={whey_pic_1} alt="img" width={'200px'}/>
+                            <img src={Whey_pic_4} alt="img" width={'200px'}/>
                         </div>
                         <div id="whey-name-back">
                             <p>
@@ -181,14 +188,17 @@ function Protien_powder() {
                             <div id="whey-price">
                                 <p>
                                     <b>
-                                        ₨5,649.00 – <br />₨8,749.00   
+                                        <del style={{color:'gray'}}>
+                                            ₨10,000.00
+                                        </del> <br />
+                                        ₨6,749.00 
                                     </b>
                                 </p>
                             </div>
                             <div id="whey-btn-back">
-                                <button>
-                                    Shop Now
-                                </button>
+                                <Link to="/Pea_protien">
+                                    <button>Shop Now</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -196,7 +206,7 @@ function Protien_powder() {
                  <div className="col-12 col-sm-6 col-lg-3 mb-4 ">
                     <div id="whey-protien-back">
                         <div id="whey-img-side">
-                            <img src={whey_pic_1} alt="img" width={'200px'}/>
+                            <img src={Whey_pic_6} alt="img" width={'200px'}/>
                         </div>
                         <div id="whey-name-back">
                             <p>
@@ -222,9 +232,9 @@ function Protien_powder() {
                                 </p>
                             </div>
                             <div id="whey-btn-back">
-                                <button>
-                                    Shop Now
-                                </button>
+                                <Link to="/Micellar_casein">
+                                    <button>Shop Now</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -232,12 +242,87 @@ function Protien_powder() {
                   <div className="col-12 col-sm-6 col-lg-3 mb-4 ">
                     <div id="whey-protien-back">
                         <div id="whey-img-side">
-                            <img src={whey_pic_1} alt="img" width={'200px'}/>
+                            <img src={Whey_pic_7} alt="img" width={'200px'}/>
                         </div>
                         <div id="whey-name-back">
                             <p>
                                 <b>
                                    All In One Recovery
+                                </b>
+                            </p>
+                        </div>
+                        <div id="whey-star-price-back">
+                            <div id="whey-star">
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                            </div>
+                            <div id="whey-price">
+                                <p>
+                                    <b>
+                                      ₨9,549.00 – <br />₨13,999.00
+ 
+                                    </b>
+                                </p>
+                            </div>
+                            <div id="whey-btn-back">
+                                 <Link to="/All_recovery">
+                                    <button>Shop Now</button>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  <div className="col-12 col-sm-6 col-lg-3 mb-4 ">
+                    <div id="whey-protien-back">
+                        <div id="whey-img-side">
+                            <img src={Whey_pic_8} alt="img" width={'200px'}/>
+                        </div>
+                        <div id="whey-name-back">
+                            <p>
+                                <b>
+                                   High Protein Diet Meal <br />Replacement Mega Sale!
+                                </b>
+                            </p>
+                        </div>
+                        <div id="whey-star-price-back">
+                            <div id="whey-star">
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                            </div>
+                            <div id="whey-price">
+                                <p>
+                                    <b>
+                                        <del style={{color:'gray'}}>
+                                            ₨10,000.00
+                                        </del> <br />
+                                      ₨4,999.00
+ 
+                                    </b>
+                                </p>
+                            </div>
+                            <div id="whey-btn-back">
+                                 <Link to="/High_protienDiet">
+                                    <button>Shop Now</button>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-12 col-sm-6 col-lg-3 mb-4 ">
+                    <div id="whey-protien-back">
+                        <div id="whey-img-side">
+                            <img src={whey_pic_1} alt="img" width={'200px'}/>
+                        </div>
+                        <div id="whey-name-back">
+                            <p>
+                                <b>
+                                   Protein Porridge 360
                                 </b>
                             </p>
                         </div>
@@ -258,9 +343,9 @@ function Protien_powder() {
                                 </p>
                             </div>
                             <div id="whey-btn-back">
-                                <button>
-                                    Shop Now
-                                </button>
+                                 <Link to="/Protein_Porridge">
+                                    <button>Shop Now</button>
+                                </Link>
                             </div>
                         </div>
                     </div>

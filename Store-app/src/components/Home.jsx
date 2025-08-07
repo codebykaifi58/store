@@ -1,6 +1,7 @@
 import React  from "react";
 import Crousel from './Crousel';
 import { useState, useEffect } from "react";
+import Loader from "./Loader";
 
 import product_1 from '../assets/product_1.png';
 import product_2 from '../assets/product_2.png';
@@ -16,7 +17,18 @@ function Home(){
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [speed, setSpeed] = useState(150);
+//   const [loader, setLoader] = useState(true); // ✅ BOOLEAN
 
+//   // ✅ Show loader for 3 seconds
+//   useEffect(() => {
+//     const timer = setTimeout(() => {
+//       setLoader(false); // just set to false
+//     }, 3000);
+
+//     return () => clearTimeout(timer);
+//   }, []);
+
+  
   useEffect(() => {
     const currentWord = words[wordIndex];
     const timeout = setTimeout(() => {
@@ -47,6 +59,11 @@ function Home(){
 
     return(
         <>
+            {/* {loader ? (
+                <Loader/>
+            ):(
+
+                <> */}
             <Crousel/>
            
           
@@ -63,8 +80,7 @@ function Home(){
                     </div>
                     
                    <div className="row" id="product-row">
-                            {/* Product 1 */}
-                            <div className="col-md-4 mb-4">
+                            <div className="col-md-5 mb-4">
                                 <div id="product_1" className="text-center">
                                     <div id="p1_img">
                                     <img src={product_1} alt="" className="img-fluid" />
@@ -78,8 +94,7 @@ function Home(){
                                 </div>
                             </div>
 
-                            {/* Product 2 */}
-                            <div className="col-md-4 mb-4">
+                            <div className="col-md-5 mb-4">
                                 <div id="product_2" className="text-center">
                                     <div id="p2_img">
                                     <img src={product_2} alt="" className="img-fluid" />
@@ -93,8 +108,7 @@ function Home(){
                                 </div>
                             </div>
 
-                            {/* Product 3 */}
-                            <div className="col-md-4 mb-4">
+                            <div className="col-md-5 mb-4">
                                 <div id="product_3" className="text-center">
                                     <div id="p3_img">
                                     <img src={product_3} alt="" className="img-fluid" />
@@ -108,44 +122,21 @@ function Home(){
                                 </div>
                             </div>
 
-                             {/* Product 4 */}
-                            <div className="col-md-4 mb-4">
+                            <div className="col-md-5 mb-4">
                                 <div id="product_4" className="text-center">
                                     <div id="p4_img">
                                     <img src={product_4} alt="" className="img-fluid" />
                                     </div>
                                     <h4>FAT <span>LOSS</span></h4>
                                     <div id="p4_btn">
-                                         <button>Shop Now </button>
+                                         <Link to="/Weight_loss">
+                                            <button>Shop Now</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
 
-                            {/* Product 5 */}
-                            <div className="col-md-4 mb-4">
-                                <div id="product_5" className="text-center">
-                                    <div id="p5_img">
-                                    <img src={product_5} alt="" className="img-fluid" />
-                                    </div>
-                                    <h4>HEALTHY <span>FOODS</span></h4>
-                                    <div id="p5_btn">
-                                         <button>Shop Now   </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Product 6 */}
-                            <div className="col-md-4 mb-4">
-                                <div id="product_6" className="text-center">
-                                    <div id="p6_img">
-                                    <img src={product_1} alt="" className="img-fluid" />
-                                    </div>
-                                    <h4>CREATINE <span>POWDERS</span></h4>
-                                    <div id="p6_btn">
-                                         <button >Shop Now  </button>
-                                    </div>
-                                </div>
-                            </div>
+                          
                     </div>
 
                     <div className="row">
@@ -258,7 +249,8 @@ function Home(){
                     </div>
                 </div>
             </div>
-            
+                {/* </>
+             )} */}
         </>
     )
 }

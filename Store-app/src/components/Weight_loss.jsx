@@ -1,22 +1,21 @@
 
 import React from "react";
-import mass_pic_1 from '../assets/mass-gainer-1.jpg'
-import mass_pic_2 from '../assets/mass-gainer-2.jpg'
+import mass_pic_1 from '../assets/Thermopro-600x600.jpg'
+import mass_pic_2 from '../assets/cla_60_softgels.1-1-600x600.jpg'
 import mass_pic_3 from '../assets/mass-gainer-3.jpg'
 
 import { Link } from "react-router-dom";
 
-function Mass_gainer() {
+function Weight_loss() {
+    
   return (
     <div className="cotainer-fluid">
         <div className="container">
             <div className="row">
                 <div className="col mt-5" id="mass-hero-col">
                     <div id="mass-hero">
-                        <h1>Weight Gainers</h1>
-                         <p>If you are in search of highly nutritious weight gain protein shakes, you are at the right place here. 
-                            Made with premium quality ingredients, our mass gainer protein shakes are perfect for people who want 
-                            rapid mass and muscle growth.</p>
+                        <h1>Weight Loss</h1>
+                         <p>If you are looking for an effective fat burner in Pakistan, look no further than our high-quality yet affordable fat burning supplements.</p>
                     </div>
                 </div>
             </div>
@@ -29,80 +28,7 @@ function Mass_gainer() {
                         <div id="mass-name-back">
                             <p>
                                 <b>
-                                    Total Mass Matrix
-                                </b>
-                            </p>
-                        </div>
-                        <div id="mass-star-price-back">
-                            <div id="mass-star">
-                                <i className="bi bi-star-fill"></i>
-                                <i className="bi bi-star-fill"></i>
-                                <i className="bi bi-star-fill"></i>
-                                <i className="bi bi-star-fill"></i>
-                                <i className="bi bi-star-fill"></i>
-                            </div>
-                            <div id="mass-price">
-                                <p>
-                                    <b>
-                                       <del style={{color:'gray'}}>
-                                         ₨12,000.00 
-                                        </del><br />
-                                        ₨8,949.00
-                                    </b>
-                                </p>
-                            </div>
-                            <div id="mass-btn-back">
-                               <Link to="/Total_mass_matrix">
-                                    <button>Shop Now</button>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <div className="col-12 col-sm-6 col-lg-3 mb-4">
-                    <div id="mass-gainer-back">
-                        <div id="mass-img-side">
-                            <img src={mass_pic_2} alt="img" width={'200px'}/>
-                        </div>
-                        <div id="mass-name-back">
-                            <p>
-                                <b>
-                                      All in One Recovery
-                                </b>
-                            </p>
-                        </div>
-                        <div id="mass-star-price-back">
-                            <div id="mass-star">
-                                <i className="bi bi-star-fill"></i>
-                                <i className="bi bi-star-fill"></i>
-                                <i className="bi bi-star-fill"></i>
-                                <i className="bi bi-star-fill"></i>
-                                <i className="bi bi-star-fill"></i>
-                            </div>
-                            <div id="mass-price">
-                                <p>
-                                    <b>
-                                      ₨9,549.00 –<br /> ₨13,999.00
-                                    </b>
-                                </p>
-                            </div>
-                            <div id="mass-btn-back">
-                                 <Link to="/All_recovery">
-                                     <button>Shop Now</button>
-                                 </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-12 col-sm-6 col-lg-3 mb-4">
-                    <div id="mass-gainer-back">
-                        <div id="mass-img-side">
-                            <img src={mass_pic_3} alt="img" width={'200px'}/>
-                        </div>
-                        <div id="mass-name-back">
-                            <p>
-                                <b>
-                                    Protein Porridge 360
+                                   Thermopro (Fat Destroyer) Mega Sale!
                                 </b>
                             </p>
                         </div>
@@ -118,13 +44,88 @@ function Mass_gainer() {
                                 <p>
                                     <b>
                                         <del style={{color:'gray'}}>
-                                            ₨15000.00    
-                                        </del> – <br />₨9,999.00
+                                            Rs 5000.00    
+                                        </del> - <br />
+                                        Rs 1999.00
                                     </b>
                                 </p>
                             </div>
                             <div id="mass-btn-back">
-                                <Link to="/Protein_Porridge">
+                               <Link to="/Thermopro">
+                                    <button>Shop Now</button>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div className="col-12 col-sm-6 col-lg-3 mb-4">
+                    <div id="mass-gainer-back">
+                        <div id="mass-img-side">
+                            <img src={mass_pic_2} alt="img" width={'200px'}/>
+                        </div>
+                        <div id="mass-name-back">
+                            <p>
+                                <b>
+                                    CLA (FOR A LEAN AND SHREDDED BODY)
+                                </b>
+                            </p>
+                        </div>
+                        <div id="mass-star-price-back">
+                            <div id="mass-star">
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                            </div>
+                            <div id="mass-price">
+                                <p>
+                                    <b>
+                                       <del style={{color:'gray'}}>
+                                            ₨6,000.00
+                                        </del> – <br /> ₨3,149.00
+                                    </b>
+                                </p>
+                            </div>
+                            <div id="mass-btn-back">
+                                 <Link to="/Cla">
+                                     <button>Shop Now</button>
+                                 </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-12 col-sm-6 col-lg-3 mb-4">
+                    <div id="mass-gainer-back">
+                        <div id="mass-img-side">
+                            <img src={mass_pic_3} alt="img" width={'200px'}/>
+                        </div>
+                        <div id="mass-name-back">
+                            <p>
+                                <b>
+                                   High Protein Diet Meal Replacement Mega Sale!
+                                </b>
+                            </p>
+                        </div>
+                        <div id="mass-star-price-back">
+                            <div id="mass-star">
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                                <i className="bi bi-star-fill"></i>
+                            </div>
+                            <div id="mass-price">
+                                <p>
+                                    <b>
+                                        <del style={{color:'gray'}}>
+                                            Rs10000.00    
+                                        </del> – <br />₨4,999.00
+                                    </b>
+                                </p>
+                            </div>
+                            <div id="mass-btn-back">
+                                <Link to="/High_protienDiet">
                                      <button>Shop Now</button>
                                  </Link>
                             </div>
@@ -202,4 +203,4 @@ function Mass_gainer() {
   );
 }
 
-export default Mass_gainer;
+export default Weight_loss;

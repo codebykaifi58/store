@@ -2,6 +2,7 @@ import React from "react";
 import logo from '../assets/logo.png';
 
 function About() {
+    
     return (
         <>
             <div className="container-fluid" style={{ overflowX: 'hidden' }}>

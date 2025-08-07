@@ -1,24 +1,17 @@
 import React, { useState } from 'react';
 
-import whey1 from '../assets/Whey-Protein-Front-Pic-600x600.jpg';
-import whey2 from '../assets/Whey-Protein-Back-Pic-600x600.jpg';
+import whey1 from '../assets/Total-mass-jpeg-600x600.jpg';
 import halal from '../assets/Halal-Good-Logo-300x160-1-300x160.jpg';
-const Whey_protien_phn = () => {
+const Total_mass_matrix = () => {
   // Replace with your actual image URLs
   const images = [
     whey1,
-    whey2,
   ];
 
   const [featuredImage, setFeaturedImage] = useState(images[0]); // default image
 
 const variants = [
-  { id: 1, flavor: 'Chocolate', weight: '1 kg(2.2 lbs)-33 Serving', price: 7999.00 },
-  { id: 2, flavor: 'Chocolate', weight: '2 kg(4.4 lbs) (2-pack of 1 kg)-66 Serving', price: 14999.00 },
-  { id: 3, flavor: 'Unflavoured', weight: '1 kg(2.2 lbs)-33 Serving', price: 6999.00 },
-  { id: 4, flavor: 'Unflavoured', weight: '2 kg(4.4 lbs) (2-pack of 1 kg)-66 Serving', price: 12999.00 },
-  { id: 5, flavor: 'Mango', weight: '1 kg(2.2 lbs)-33 Serving', price: 7999.00 },
-  { id: 6, flavor: 'Mango', weight: '2 kg(4.4 lbs) (2-pack of 1 kg)-66 Serving', price: 14999.00 },
+  { id: 2, flavor: 'Chocolate silk', weight: '2 kg(4.4 lbs)', price: 8949.00 },
 ];
 
 const [selectedFlavor, setSelectedFlavor] = useState(variants[0].flavor);
@@ -38,7 +31,8 @@ const handleDecrement = () => {
   setQuantity(prev => (prev > 1 ? prev - 1 : 1));
 };
 
-const productName = "Whey Protein by PHN";
+
+const productName = "Total Mass Matrix";
   const addToCart = () => {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -105,7 +99,7 @@ const productName = "Whey Protein by PHN";
                         <div className="col mt-4" id='whey-protien-detail-back'>
                             <div id="whey-heading-back">
                                 <h3>
-                                    Whey Protein by PHN
+                                    Total Mass Matrix
                                 </h3>
                             </div>
                             <div id="whey-details-few" className='mt-5'>
@@ -116,25 +110,30 @@ const productName = "Whey Protein by PHN";
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                 </span>
-                                <p style={{fontWeight:'500'}}>
-                                    Note: The Protein Factory is pleased to announce that we have become authorized sellers of Pure
-                                     Health Nutrition. Pure Health Nutrition is Pakistan’s first high quality sports nutrition brand.
-                                      PHN’s aim is to provide its customers with the best quality supplements at the best prices. 
-                                      All the ingredients are imported from the best suppliers around the world. Only the  packaging 
-                                      is done in Pakistan. 
+                                 <p style={{fontWeight:'500'}}>
+                                    Note:Total Mass Matrix sets a new benchmark in mass weight gainers. Its supercharged calorie 
+                                    dense formula is designed for anyone looking to bulk up and increase muscle mass. The TPW™ 
+                                    Nutrition Team have used an optimal 2:1 carb to protein ratio which delivers over 490
+                                     calories per serving, plus over 30g of premium grade protein. It is the ideal high
+                                      calorie shake to help support your weight and mass gain goals, without adding 
+                                      unwanted fat.
                                 </p>
+                                
                             </div>
-                            <div id="whey-advantages-back">
+                            {/* <div id="whey-advantages-back">
                                 <ul>
-                                    <li>Highest Quality Whey Protein Imported From Europe.</li>
-                                    <li>100% Original Guaranteed.</li>
-                                    <li>22 g Protein Per Scoop.</li>
-                                    <li>5 g BCAAs and 3.7 g Glutamine Per Scoop.</li>
-                                    <li>Extremely low in Fats & Carbs.</li>
-                                    <li>Ultra Pure, Premium Grade Whey Protein</li>
-                                    <li>Unflavoured Whey Protein Imported from Europe. Blended and packaged in Pakistan</li>
+                                    <li>Premium grade fast and slow acting proteins.</li>
+                                    <li>Up to 21g of protein.</li>
+                                    <li>Over 5g of filling fibre.</li>
+                                    <li>Less than 4g of sugar per serving.</li>
+                                    <li>Delicious flavours.</li>
+                                    <li>Rich in complex carbohydrates.</li>
+                                    <li>Low GI oats.</li>
+                                    <li>Less than 300 calories.</li>
+                                    <li>Added Vitamins & Minerals.</li>
+                                    <li>Easy to make.</li>
                                 </ul>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="row">
@@ -147,16 +146,16 @@ const productName = "Whey Protein by PHN";
                                         <h5 className="mb-3">Choose Your Options</h5>
 
                                         {/* Flavor Dropdown */}
-                                        <div className="mb-3">
+                                         <div className="mb-3">
                                             <label className="form-label">Flavor</label>
                                             <select
-                                                className="form-select"
-                                                value={selectedFlavor}
-                                                onChange={(e) => setSelectedFlavor(e.target.value)}
+                                            className="form-select"
+                                            value={selectedFlavor}
+                                            onChange={(e) => setSelectedFlavor(e.target.value)}
                                             >
-                                                {['Chocolate', 'Unflavoured', 'Mango'].map(flavor => (
-                                                    <option key={flavor} value={flavor}>{flavor}</option>
-                                                ))}
+                                            {[...new Set(variants.map(v => v.flavor))].map(flavor => (
+                                                <option key={flavor} value={flavor}>{flavor}</option>
+                                            ))}
                                             </select>
                                         </div>
 
@@ -221,4 +220,4 @@ const productName = "Whey Protein by PHN";
   );
 };
 
-export default Whey_protien_phn;
+export default Total_mass_matrix;
