@@ -54,11 +54,11 @@ useEffect(() => {
 </div>
 
 {/* <!-- Main Navbar --> */}
-<nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<nav className="navbar navbar-expand-lg  navbar-light bg-white  shadow-sm" id='navbar'>
   <div className="container">
     {/* <!-- Logo (center on mobile, left on desktop) --> */}
     <a className="navbar-brand order-1 order-lg-0 mx-auto mx-lg-0" href="#">
-      <img src={logo} alt="Logo" height="50"/>
+      <img src={logo} alt="Logo" height="150px"/>
     </a>
 
     {/* <!-- Cart button always visible --> */}
@@ -86,7 +86,7 @@ useEffect(() => {
             <li><Link className="dropdown-item" to="/Weight_loss">Weight Loss</Link></li>
           </ul>
         </li>
-        <li className="nav-item"><Link className="nav-Link" to="/Whey_protien_isolate">Shop</Link></li> 
+        <li className="nav-item"><Link className="nav-Link" to="/Shop">Shop</Link></li> 
         <li className="nav-item"><Link className="nav-Link" to="/about">About</Link></li>
         <li className="nav-item"><Link className="nav-Link" to="/contact">Contact</Link></li>
       </ul>

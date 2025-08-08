@@ -61,9 +61,33 @@
     );
 
     // Button click handler (aap backend ko call karne ke liye is function ko modify kar sakte hain)
-    const handleCheckout = () => {
-        alert(`Grand Total: ₨${grandTotal.toLocaleString()}\n\nYahan se backend ko call kar sakte hain.`);
-    };
+const handleCheckout = async () => {
+    try {
+        const response = await fetch('http://localhost/store/Back-end/save_cart.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ cart: cartItems }),
+        });
+
+        const result = await response.json();
+        console.log("Server Response:", result);
+
+        if (result.success) {
+            alert("Cart successfully saved to database!");
+            localStorage.removeItem('cart');
+            setCartItems([]);
+        } else {
+            alert("Failed to save cart. Try again.");
+        }
+    } catch (error) {
+        console.error('Checkout error:', error);
+        alert("Server error during checkout.");
+    }
+};
+
+
 
     return (
         <div className="container my-5" id='cart-back' style={{ minHeight: '550px' }}>

@@ -32,7 +32,8 @@ import Thermopro from './components/Thermopro';
 import Weight_loss from './components/Weight_loss';
 import Cla from './components/Cla';
 import Loader from './components/Loader';
-import Cart from './components/Cart'
+import Cart from './components/Cart';
+import Shop from './components/Shop';
 import './App.css';
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
         <Route path="/Weight_loss" element={<Weight_loss/>} />
         <Route path="/Cla" element={<Cla/>} />
         <Route path="/Cart" element={<Cart/>} />
+        <Route path="/Shop" element={<Shop/>} />
       </Routes>
       <Footer />
     </Router>
