@@ -1,11 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-//👇 Replace with your GitHub repo name:
-const repoName = 'Store-app'
+// 👇 Match this exactly to your GitHub repo name
+const repoName = 'store'
 
 export default defineConfig({
   plugins: [react()],
-  base: `/${repoName}/`, // 👈 Important
+  base: `/${repoName}/`, // 👈 Case-sensitive!
 })
-
